@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">  </script>
+  <script>
+   function funcaoNovo(){
+   
+            document.getElementById("btnAlter").disabled = true;
+            document.getElementById("btnExcluir").disabled = true;
+            document.getElementById("btnSalvar").disabled = false;
+            document.getElementById("btnPesquisar").disabled = true;
+            document.getElementById("btnCancelar").disabled = false;
+        }
+        
+         function funcaoAlter(){
+   
+   			document.getElementById("btnNovo").disabled = false;
+            document.getElementById("btnSalvar").disabled = true;
+            document.getElementById("btnExcluir").disabled = true;
+            document.getElementById("btnPesquisar").disabled = true;
+            document.getElementById("btnCancelar").disabled = false;
+        }
+        
+        function funcaoExcluir(){
+   
+   			document.getElementById("btnNovo").disabled = false;
+            document.getElementById("btnAlter").disabled = true;
+            document.getElementById("btnSalvar").disabled = true;
+            document.getElementById("btnPesquisar").disabled = false;
+            document.getElementById("btnCancelar").disabled = false;
+        }
+        
+         function funcaoPesquisa(){
+   
+   			document.getElementById("btnNovo").disabled = false;
+            document.getElementById("btnAlter").disabled = true;
+            document.getElementById("btnExcluir").disabled = true;
+            document.getElementById("btnSalvar").disabled = true;
+            document.getElementById("btnCancelar").disabled = false;
+        }
+        
+  function funcaoSalvar(){
+   
+   			document.getElementById("btnNovo").disabled = false;
+            document.getElementById("btnAlter").disabled = true;
+            document.getElementById("btnExcluir").disabled = true;
+            document.getElementById("btnPesquisar").disabled = true;
+            document.getElementById("btnCancelar").disabled = false;
+        }
+        
+      
+        
+         function funcaoCancelar(){
+   
+   			document.getElementById("btnNovo").disabled = false;
+            document.getElementById("btnAlter").disabled = true;
+            document.getElementById("btnExcluir").disabled = true;
+            document.getElementById("btnPesquisar").disabled = false;
+            document.getElementById("btnSalvar").disabled = true;
+        }
+  </script>
+</head>
+
+<body>
+
+ <button type="button" id="btnNovo" class="btn btn-primary"
+    onclick="funcaoNovo()">Novo </button>
+
+    <button type="button" id="btnAlter" class="btn btn-primary"
+    onclick="funcaoAlter()">Alterar</button>
+    
+    <button type="button" id="btnExcluir" class="btn btn-primary"
+    onclick="funcaoExcluir()">Excluir</button>
+    
+    <button type="button" id="btnPesquisar" class="btn btn-primary"
+    onclick="funcaoPesquisa()">Pesquisar</button>
+    
+    <button type="button" id="btnSalvar" class="btn btn-primary"
+    onclick="funcaoSalvar()">Salvar</button>
+    
+    <button type="button" id="btnCancelar" class="btn btn-primary"
+    onclick="funcaoCancelar()">Cancelar</button>
+
+</body>
+</html>
