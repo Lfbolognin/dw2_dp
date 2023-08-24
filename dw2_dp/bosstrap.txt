@@ -12,6 +12,16 @@
             document.getElementById("btnSalvar").disabled = false;
             document.getElementById("btnPesquisar").disabled = true;
             document.getElementById("btnCancelar").disabled = false;
+            
+            document.getElementById("txtNome").disabled = false;
+            document.getElementById("txtCPF").disabled = false;
+            document.getElementById("txtMatricula").disabled = false;
+            document.getElementById("txtTurno").disabled = false;
+            document.getElementById("txtRA").disabled = false;
+            document.getElementById("txtCR").disabled = false;
+            document.getElementById("txtEmail").disabled = false;
+            document.getElementById("txtData_ingresso").disabled = false;
+            
         }
         
          function funcaoAlter(){
@@ -48,6 +58,11 @@
             document.getElementById("btnExcluir").disabled = true;
             document.getElementById("btnPesquisar").disabled = true;
             document.getElementById("btnCancelar").disabled = false;
+            
+            localStorage.setItem("nome", document.getElementById
+            ("txtNome").value);
+            
+            window.alert(localStorage.getItem("Nome"));
         }
         
       
@@ -64,6 +79,38 @@
 </head>
 
 <body>
+
+<span> Nome: </span> <input type = "text" class = "form-control" id="txtNome" disabled >
+
+<br>
+
+<span> CPF: </span> <input type = "text" class = "form-control" id="txtCPF" disabled >
+<br>
+
+<span> Matricula: </span> <input type = "text" class = "form-control" id="txtMatricula" disabled >
+
+<br>
+
+<span> Turno: </span> <input type = "text" class = "form-control" id="txtTurno" disabled >
+
+<br>
+
+<span> RA: </span> <input type = "text" class = "form-control" id="txtRA" disabled >
+
+<br>
+
+<span> CR: </span> <input type = "text" class = "form-control" id="txtCR" disabled >
+
+<BR>
+
+
+<span> Email: </span> <input type = "text" class = "form-control" id="txtEmail" disabled >
+
+<br>
+
+<span> Data de ingresso: </span> <input type = "text" class = "form-control" id="txtData_ingresso" disabled >
+
+<br>
 
  <button type="button" id="btnNovo" class="btn btn-primary"
     onclick="funcaoNovo()">Novo </button>
@@ -82,6 +129,9 @@
     
     <button type="button" id="btnCancelar" class="btn btn-primary"
     onclick="funcaoCancelar()">Cancelar</button>
+    
+    
+    
 
 </body>
 </html>
